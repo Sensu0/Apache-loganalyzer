@@ -1,5 +1,5 @@
 # Apache-loganalyzer
-This script was made as part of school assignment to analyze logfiles from Apache. Python 3.11 was being used for development at the when this script was made and we received a sample logfile which is attached as part of this repository.
+This script was made as part of school assignment to analyze logfiles from Apache. Python 3.11 was being used for development at the time when this script was made and we received a sample logfile which is attached as part of this repository.
 
 When running the script without any arguments you will get the following message:
 "Usage: 'python loganalyzer.py filepath action'.", in which 'filepath' refers to the filepath of the log file and 'action' referring to the different commandline arguments you can use when running this script.
