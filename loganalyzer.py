@@ -24,11 +24,11 @@ def func_print(filepath, action):
             elif action == 'notice':
                 func_notice(log_entries)
             else:
-                print(f"Illegal action: '{action}'. Run 'python loganalyzer.py' to see available arguments." '\n\n' "We'll be sending the SWAT team next time to put you in jail for breaking the syntax law!")
+                print(f"Illegal action: '{action}'. Run 'python loganalyzer.py' to see available arguments.")
 
 # Exception if user provides a path in which the file does not exist.
     except FileNotFoundError:
-        print(f"What do you mean '{filepath}'? Consult your memory for the correct path, 'cause it's not in here!")
+        print(f"The file at '{filepath}' was not found.")
 
 # Function designed to count the amount of 'error' and 'notice' log entries 
 def func_statistics(log_entries):
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     # built-in function "len()" with the array "sys.argv" (which lets script accept command-line arguments)
     # to return printing the string in line 95.
     if len(sys.argv) != 3:
-        print("Usage: 'python loganalyzer.py filepath action'. Anything else is fake news propaganda!")
+        print("Usage: 'python loganalyzer.py filepath action'.")
     # Else run the script using the provided filepath and action argument via sys.argv in "func_print" function.
     else:
         filepath = sys.argv[1]
